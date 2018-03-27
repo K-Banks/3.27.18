@@ -1,4 +1,4 @@
-var vowels = ['a', 'e', 'o', 'i', 'u'];
+var vowels = ['a', 'e', 'o', 'i', 'u', 'A', 'E', 'I', 'O', 'U'];
 var stringToHide = "";
 var stringToAnswer = "";
 
@@ -13,14 +13,24 @@ $(document).ready(function() {
       for (var j = 0; j < stringToHide.length; j++) {
         if (stringToHide.charAt(j) === vowelCheck) {
           stringToHide = stringToHide.replace(stringToHide.charAt(j), '-');
-          console.log(stringToHide);
         }
       }
     }
-    console.log(stringToHide);
     $('#hidden-string').hide();
-    $('p').append(stringToHide);
-    $('p').show();
+    $('#puzzle').append(stringToHide);
+    $('#puzzle').show();
     $('.guess').show();
   });
+  $('.guess').submit(function(event){
+    event.preventDefault();
+    var userAnswer = $('#answer').val();
+    if (userAnswer){
+      console.log(userAnswer);
+      if (userAnswer === stringToAnswer){
+        $("#printAnswer").text("Good job!");
+      } else {
+        $("#printAnswer").text("Silly rabbit! Try again.");
+      }
+    }
+  })
 });
