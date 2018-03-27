@@ -27,7 +27,7 @@ $(document).ready(function() {
     if (userAnswer){
       console.log(userAnswer);
       if (userAnswer === stringToAnswer){
-        $("#printAnswer").text("Good job!");
+        $("#printAnswer").text("Good job !");
       } else {
         $("#printAnswer").text("Silly rabbit! Try again.");
       }
