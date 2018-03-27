@@ -1,13 +1,19 @@
 var vowels = ['a', 'e', 'o', 'i', 'u'];
+var stringToPrint = "";
+var stringToHide = "";
 
 $(document).ready(function() {
-  $('input').submit(function(event){
+  $('#form').submit(function(event){
+    debugger
     event.preventDefault();
-    var stringToHide = $('input#hidden-string').val();
+    stringToHide = $('input#hidden-string').val();
     for (var i = 0; i < vowels.length; i++) {
-      stringToHide =  $(stringToHide).replace(/vowels[i]/g, '-');
+      stringToPrint = stringToHide.replace(new RegExp(vowels[i], 'g'), "-");
     }
+    console.log(stringToHide);
+    console.log(stringToPrint);
     $('#hidden-string').hide();
-    $('#puzzle')
-  })
+    $('p').append(stringToPrint);
+    $('p').show();
+  });
 });
