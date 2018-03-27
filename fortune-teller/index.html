@@ -1,16 +1,53 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/jquery-3.3.7.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <meta charset="utf-8">
-    <title>fortune teller</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-3.3.7.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <meta charset="utf-8">
+  <title>fortune teller</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <form id="formSubmission" action="index.html" method="post">
+      <p>What sounds like fun?</p>
+      <input type="checkbox" name="patsy" value="-1">Slaughtering the innocent<br>
+      <input type="checkbox" name="patsy" value="0">Drinking tea<br>
+      <input type="checkbox" name="patsy" value="1">Picking up litter<br>
+      <input type="checkbox" name="patsy" value="0">Reading the newspaper<br>
+      <input type="checkbox" name="patsy" value="-1">Burning the newspaper down<br>
+      <input type="checkbox" name="patsy" value="1">Protest an editorial printed in the newspaper<br>
+      <p>Where would be a nice place to visit?</p>
+      <input type="checkbox" name="patsy" value="-1">Fresno<br>
+      <input type="checkbox" name="patsy" value="-1">Amarillo<br>
+      <input type="checkbox" name="patsy" value="-1">Ibiza<br>
+      <input type="checkbox" name="patsy" value="0">Canada<br>
+      <input type="checkbox" name="patsy" value="0">Switzerland<br>
+      <input type="checkbox" name="patsy" value="1">New Zealand<br>
+      <input type="checkbox" name="patsy" value="1">Amsterdam<br>
+      <input type="checkbox" name="patsy" value="1">Epicodus<br>
+      <p>What names would you consider for your pet?</p>
+      <input type="checkbox" name="patsy" value="1">Fido<br>
+      <input type="checkbox" name="patsy" value="0">Rex<br>
+      <input type="checkbox" name="patsy" value="-1">Cerberus<br>
+      <input type="checkbox" name="patsy" value="1">Yoshi<br>
+      <input type="checkbox" name="patsy" value="0">Birdo<br>
+      <input type="checkbox" name="patsy" value="-1">Bowser<br>
+      <input type="checkbox" name="patsy" value="1">Dogmeat<br>
+      <input type="checkbox" name="patsy" value="1">Dinky-Di<br>
+      <button type="submit" name="button">Submit to me!!!</button>
+    </form>
+    <div class="good">
+      <h3>You are okay</h3>
     </div>
-  </body>
+    <div class="neutral">
+      <h3>You don't care</h3>
+    </div>
+    <div class="evil">
+      <h3>You are Cam.</h3>
+    </div>
+  </div>
+</body>
 </html>
