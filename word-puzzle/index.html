@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/javascript" src="js/jquery-3.3.7.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="utf-8">
-    <title>word puzzle</title>
-  </head>
-  <body>
-    <form id="form" action="index.html" method="post">
-      <input type="text" id="hidden-string" placeholder="Type In Here">
-      <button type="submit" name="button">Puzzle Time</button>
-    </form>
-    <p id="puzzle"></p>
+<head>
+  <script type="text/javascript" src="js/jquery-3.3.7.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <title>word puzzle</title>
+</head>
+<body>
+  <div class="container">
+    <div class="well">
+      <form id="form" action="index.html" method="post">
+        <input type="text" id="hidden-string" placeholder="Type In Here">
+        <button type="submit" name="button">Puzzle Time</button>
+      </form>
+    </div>
+    <div class="jumbotron">
+    <h1 class="header" id="puzzle"></h1>
+    </div>
     <form class="guess">
       <input type="text" id="answer" placeholder="Type Answer">
       <button type="submit" name="button">Answer</button>
     </form>
     <div>
-      <h1><span id="printAnswer"></span>   </h1>
+      <h1><span id="printAnswer"></span></h1>
     </div>
-  </body>
+  </div>
+</body>
 </html>
